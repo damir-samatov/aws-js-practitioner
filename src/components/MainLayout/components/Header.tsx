@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            damir_samatov AWS STORE
+            damir_samatov STORE
           </Link>
         </Typography>
 
