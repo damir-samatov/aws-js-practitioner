@@ -22,7 +22,12 @@
     "cloudfront:build:deploy:nc": "npm run client:build:deploy:nc && npm run cloudfront:invalidateCache",
     "cloudfront:update:build:deploy": "npm run cloudfront:setup && npm run cloudfront:build:deploy",
     "cloudfront:update:build:deploy:nc": "npm run cloudfront:setup && npm run cloudfront:build:deploy:nc",
-    "serverless:remove": "sls remove"
+    "serverless:remove": "sls remove",
+    "build:deploy": "npm run build && npm run infra:deploy",
+    "infra:bootstrap": "npm --prefix ./infra run bootstrap",
+    "infra:synth": "npm --prefix ./infra run synth",
+    "infra:deploy": "npm --prefix ./infra run deploy",
+    "infra:destroy": "npm --prefix ./infra run destroy"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
