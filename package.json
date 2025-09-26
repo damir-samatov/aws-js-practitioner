@@ -25,6 +25,7 @@
     "serverless:remove": "sls remove",
     "build:deploy": "npm run build && npm run infra:deploy",
     "infra:bootstrap": "npm --prefix ./infra run bootstrap",
+    "infra:build": "npm --prefix ./infra run build",
     "infra:synth": "npm --prefix ./infra run synth",
     "infra:deploy": "npm --prefix ./infra run deploy",
     "infra:destroy": "npm --prefix ./infra run destroy"
